@@ -1,0 +1,91 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+@font-face {
+    font-family: 'segoe';
+    src: url('font/segoe/segoepr.ttf') format('truetype'),
+         url('font/segoe/segoeprb.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'black_jackregular';
+    src: url('font/BlackJack/blackjack-webfont.woff2') format('woff2'),
+         url('font/BlackJack/blackjack-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.logo-rekinte {
+    font-family: 'segoe';
+}
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+
+.icon-block {
+  padding: 0 15px;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+a[href="#top"]{
+    padding:10px;
+    position:fixed;
+    top: 90%;
+    right:40px;
+    display:none;
+    font-size: 30px;
+    z-index: 99;
+}
+a[href="#top"]:hover{
+    text-decoration:overline;
+}
+
+
