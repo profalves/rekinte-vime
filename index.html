@@ -163,33 +163,12 @@
         <h4>Solicite seu orçamento</h4>
           
   <div class="row">
-    <form class="col s12 center" action="https://formspree.io/igo.sud@hotmail.com"
-          method="POST">
-        <div class="input-field col s12">
-            <i class="material-icons prefix">account_circle</i>
-            <input type="text" name="name">
-            <label for="first_name">Nome</label>
-        </div>
-        <div class="input-field col s12">
-            <i class="material-icons prefix">email</i>
-            <input type="email" name="_replyto" class="validate">
-            <label for="email" data-error="Errado, falta um @" data-success="Email validado">Email</label>
-        </div>
-        
-        <div class="input-field col s12">
-            <i class="material-icons prefix">phone</i>
-            <input id="icon_telephone" type="tel" class="validate">
-            <label for="first_name">Fone</label>
-        </div>
-        <div class="input-field col s12">
-          <i class="material-icons prefix">mode_edit</i>
-          <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-          <label for="icon_prefix2">Mensagem</label>
-        </div>
-        <button class="btn waves-effect waves-light right" type="submit" name="action">Enviar
-          <i class="material-icons right">send</i>
-        </button>
-        
+    <form method="POST" action="http://formspree.io/igo.sud@hotmail.com">
+      <input type="text" name="name" placeholder="Seu Nome">
+      <input type="number" name="fone" placeholder="Seu fone">
+      <input type="email" name="email" placeholder="Seu Email">
+      <textarea name="message" placeholder="Sua Mensagem"></textarea>
+      <button type="submit">Send</button>
     </form>
       
       <!--
